@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.*;
 import java.security.Principal;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/verify")
 public class VerificationController {
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/token")
     public ResponseEntity<verifyDto> verify(Authentication authentication) {
         User userDetails = (User) authentication.getPrincipal();

@@ -14,7 +14,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/auth")
 public class AuthController {
     Logger logger = LoggerFactory.getLogger(AuthController.class);
@@ -23,10 +23,10 @@ public class AuthController {
     @Autowired
     private TokenProvider tokenService;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @PostMapping("/authenticate")
     public ResponseEntity<JwtDto> signIn(@RequestBody @Valid LoginDTO data) {
-        logger.info("this is auth controller");
+        //logger.info("this is auth controller");
         var usernamePassword = new UsernamePasswordAuthenticationToken(data.username(), data.password());
         var authUser = authenticationManager.authenticate(usernamePassword);
         User user = (User) authUser.getPrincipal();
