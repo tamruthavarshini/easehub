@@ -26,7 +26,7 @@ public class AuthController {
     @CrossOrigin(origins = "*")
     @PostMapping("/authenticate")
     public ResponseEntity<JwtDto> signIn(@RequestBody @Valid LoginDTO data) {
-        //logger.info("this is auth controller");
+        logger.info("this is auth controller");
         var usernamePassword = new UsernamePasswordAuthenticationToken(data.username(), data.password());
         var authUser = authenticationManager.authenticate(usernamePassword);
         User user = (User) authUser.getPrincipal();
