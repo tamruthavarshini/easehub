@@ -1,7 +1,8 @@
 package com.example.miniproject.user;
 
 public enum Role {
-    Faculty,
+    Professor,
+    AssistantProfessor,
     HOD,
     Security,
     Student

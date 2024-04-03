@@ -5,628 +5,284 @@
     "password": "$2a$10$OUg1cv6hS1B0tQISopGCF.3ve.WzBVLlMqqvdjBG83YAkhpOnUxym",
     "role": "HOD",
     "id":101,
-    "name": "amrutha"
+    "name": "amrutha",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05V6",
+    "password": "$2a$10$uZGJoyrKqWP/3uyfYdUd1uI3rQA.jVrqdlkccMqtudRL5fVOg7VoC",
+    "role": "HOD",
+    "id":102,
+    "name": "srivani",
+    "branch": "ECE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05S1",
+    "password": "$2a$10$cRaYBwz0SY7AMnTkHjV.pOtH7FUGQnroA3PJSSEfC.w7DGNuY4AQC",
+    "role": "AssistantProfessor",
+    "id":103,
+    "name": "rishitha",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05S4",
+    "password": "$2a$10$5LGNkGWurmFcWEpfpO4mPO4xxAPRQ3Wcq3BQC0j7/4Y4b8wmRayD2",
+    "role": "Professor",
+    "id":104,
+    "name": "manasa",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05S6",
+    "password": "$2a$10$Lj8aJWZgdLXELkP7r8B29ucJyD6vgumnDSv9Wfuw.XKhdQY45grAu",
+    "role": "Professor",
+    "id":105,
+    "name": "harika",
+    "branch": "CSE"
 
   }
 ,{
 
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
+  "username": "21241A05T0",
+  "password": "$2a$10$jPuWcNE3oWTVbke/14b5reYnLutxT.HoFhYc5dqIwfr7qXH9Am5o2",
+  "role": "Professor",
+  "id":106,
+  "name": "shruthika",
+  "branch": "CSE"
 
 },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05U8",
+    "password": "$2a$10$wamyM6E4rrL31Qw6c.JVAuZ9LdA9Uo/kifnxgUbY9mFiNXgHL3URC",
+    "role": "Professor",
+    "id":107,
+    "name": "parthipa",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05X1",
+    "password": "$2a$10$YJC3d2yzSjJ33X/k/zoUVuwdWydTaMdmDXhl6qXssLuQWcUo/CsTm",
+    "role": "Professor",
+    "id":108,
+    "name": "anjali",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05Y0",
+    "password": "$2a$10$El80q8XNRucwvyClqXqFS.3eR16eVCfcflicwhSErZOj0B9TEnuL6",
+    "role": "AssistantProfessor",
+    "id":109,
+    "name": "niharika",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05X6",
+    "password": "$2a$10$LI7gX1rfFRkabJnH3ja4BePhX3.F0Baqc0Q3eUmQpHAwzgutPW0Iu",
+    "role": "AssistantProfessor",
+    "id":110,
+    "name": "maheshwari",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05X8",
+    "password": "$2a$10$yKKzYOUQ2/PnpY7p2Y5FFOvNRXLORAZYsLf7HGOrumYPYa42oYzl.",
+    "role": "AssistantProfessor",
+    "id":111,
+    "name": "shasi",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05X9",
+    "password": "$2a$10$g/9R9LCdg64UFxg8wQ448.ElrZuWdUbz.yrN0wmA5Cg1l5O0xLLfW",
+    "role": "AssistantProfessor",
+    "id":112,
+    "name": "sreevardhan",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05Y2",
+    "password": "$2a$10$axmMzXFPyfkbFleI52/XO.bz1KuJ8mNKzVZ6gxAEzLj5xLo2yUBei",
+    "role": "AssistantProfessor",
+    "id":113,
+    "name": "sneha",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05V7",
+    "password": "$2a$10$p9SlBwhwkI1dU1AGlTSNHubNI1Zz0NRJmWspJWXP0uGO6.Wi8qQCa",
+    "role": "AssistantProfessor",
+    "id":114,
+    "name": "manideep",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05V9",
+    "password": "$2a$10$7JCAXq6Db8W5NxEytt/cBeY1MGBHorxlRXtKgykjK0WAli/yufCka",
+    "role": "AssistantProfessor",
+    "id":115,
+    "name": "anurudh",
+    "branch": "CSE"
 
   }
 ,{
 
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
+  "username": "21241A05Y5",
+  "password": "$2a$10$u3zKX.cbUc3F/ONlNjsh8ubMnUhwKvtE4cBEqPEuwEAi6K667bJZ6",
+  "role": "AssistantProfessor",
+  "id":116,
+  "name": "vamsi",
+  "branch": "CSE"
 
 },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05T7",
+    "password": "$2a$10$uzi0MByi7RoOgtfRLO3wAO00MsHBcxjrYZSCWhqwSHS7ofQLKVh/O",
+    "role": "AssistantProfessor",
+    "id":117,
+    "name": "harsh",
+    "branch": "CSE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05S3",
+    "password": "$2a$10$r6AnowuGMrQ.IdDJcY9BiuCvfvQTnTo8JMiIEcVoJMkvJvzMfs0mK",
+    "role": "Professor",
+    "id":118,
+    "name": "poojitha",
+    "branch": "ECE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05S8",
+    "password": "$2a$10$ujgFqZCVlbArwSesRSRCO.UzlbiajRmQIWRtLTLC2s5.PNbxr.MLa",
+    "role": "Professor",
+    "id":119,
+    "name": "jyothi",
+    "branch": "ECE"
 
   },
   {
+    "username": "21241A05S9",
+    "password": "$2a$10$.gmEZiZFZ9DZFGq/YTw4mOsK9ja1l4RcEpA3BY/S75XKHaJOUzCSm",
+    "role": "Professor",
+    "id":120,
+    "name": "gopi",
+    "branch": "ECE"
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+  }, {
 
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
+  "username": "21241A05W2",
+  "password": "$2a$10$gvzZQG5td53VetAohF7L6.VfQYJo7GJbmMXJxH4IURSlA2dm9OnxO",
+  "role": "Professor",
+  "id":121,
+  "name": "bhaskar",
+  "branch": "ECE"
 
 },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05W9",
+    "password": "$2a$10$/HgsEDQyr9B39DnMejwTjesCvrboxcYqtMu3gKCDM0RtFUgOIJ1UK",
+    "role": "AssistantProfessor",
+    "id":122,
+    "name": "lahari",
+    "branch": "ECE"
+
+  },
+  //28052004
+  {
+    "username": "21241A05T6",
+    "password": "$2a$10$1T8uiNQKkYOo.HhQETw/vOz0J8Jo/UBX1uA7VD4oy2zSNpG5mkm9u",
+    "role": "AssistantProfessor",
+    "id":123,
+    "name": "geetha",
+    "branch": "ECE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05W4",
+    "password": "$2a$10$kmwFWNsqeWp3RnMiQ22rdeDe/WeiNEb2VcP6QewtqIA1XzKMH2uHq",
+    "role": "AssistantProfessor",
+    "id":124,
+    "name": "keerthy",
+    "branch": "ECE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05U0",
+    "password": "$2a$10$TVby7pullo17iDcrSDJ/A.uuD6zy7fyweJK78ujJIL6NhKyMhZxw.",
+    "role": "AssistantProfessor",
+    "id":125,
+    "name": "vennela",
+    "branch": "ECE"
+
+  },
+  {
+    "username": "21241A0530",
+    "password": "$2a$10$JuRW3SCeq8Wuw92ngtMA8uIL4ZinbR3.amGc3wC41KdRSY7luZWzW",
+    "role": "AssistantProfessor",
+    "id":126,
+    "name": "sandhya",
+    "branch": "ECE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05W6",
+    "password": "$2a$10$JhBMrK6L.TlUlL1UWOGnfuOhp/U4kNR8f8srZQcQhBaSnHyDITYGy",
+    "role": "AssistantProfessor",
+    "id":127,
+    "name": "katyayani",
+    "branch": "ECE"
 
   },
   {
 
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05U4",
+    "password": "$2a$10$QGgf1V5Gi95K9iO/mnKOO.JULRkYEj6PkFUxCIMrV.M32KXOw2vd6",
+    "role": "AssistantProfessor",
+    "id":128,
+    "name": "pravalika",
+    "branch": "ECE"
 
   },
   {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
+    "username": "21241A05Z0",
+    "password": "$2a$10$85lp19aJFWcSmDjnLdWf/egbkOHqur6AaBZi4vNOBm2FyyHU3YJx2",
+    "role": "Security",
+    "id":129,
+    "name": "ishaan",
+    "branch": "CSE"
 
   }
-,{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  }
-,{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-
     ]
