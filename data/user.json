@@ -1,169 +1,13 @@
 [
   {
 
-    "username": "amrutha",
+    "username": "21241A05X7",
     "password": "$2a$10$OUg1cv6hS1B0tQISopGCF.3ve.WzBVLlMqqvdjBG83YAkhpOnUxym",
     "role": "HOD",
-    "id":101
+    "id":101,
+    "name": "amrutha"
 
   },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  }
-  ,{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },
-  {
-
-    "username": "",
-    "password": "",
-    "role": "",
-    "id":101
-
-  },{
-
-  "username": "",
-  "password": "",
-  "role": "",
-  "id":101
-
-},
   {
 
     "username": "",
@@ -627,5 +471,162 @@
     "role": "",
     "id":101
 
+  },{
 
-]
+  "username": "",
+  "password": "",
+  "role": "",
+  "id":101
+
+},
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  }
+,{
+
+  "username": "",
+  "password": "",
+  "role": "",
+  "id":101
+
+},
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },{
+
+  "username": "",
+  "password": "",
+  "role": "",
+  "id":101
+
+},
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },{
+
+  "username": "",
+  "password": "",
+  "role": "",
+  "id":101
+
+},
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+  },
+  {
+
+    "username": "",
+    "password": "",
+    "role": "",
+    "id":101
+
+
+    ]

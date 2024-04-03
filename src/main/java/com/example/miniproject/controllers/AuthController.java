@@ -32,7 +32,8 @@ public class AuthController {
         User user = (User) authUser.getPrincipal();
         var accessToken = tokenService.generateAccessToken(user);
         String role = user.getRole().name();
-        String username = user.getUsername();
-        return ResponseEntity.ok(new JwtDto(accessToken, role, username));
+        String name = user.getName();
+        String branch=user.getBranch();
+        return ResponseEntity.ok(new JwtDto(accessToken, role, name,branch));
     }
 }

@@ -13,16 +13,41 @@ public class User implements UserDetails {
     private  String username;
     private String password;
     private Role role;
+    private String name;
+    private String branch;
 
     public User(String username) {
         this.username = username;
     }
 
-    public User(String username, String password, Role role) {
+    public User(String username, String password, Role role, String name, String branch) {
         this.username = username;
         this.password = password;
         this.role = role;
+        this.name = name;
+        this.branch = branch;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBranch() {
+        return branch;
+    }
+
+    public void setBranch(String branch) {
+        this.branch = branch;
+    }
+//    public User(String username, String password, Role role) {
+//        this.username = username;
+//        this.password = password;
+//        this.role = role;
+//    }
 
     public User() {
 
