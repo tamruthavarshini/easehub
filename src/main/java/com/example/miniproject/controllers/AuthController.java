@@ -3,7 +3,7 @@ package com.example.miniproject.controllers;
 import com.example.miniproject.config.auth.TokenProvider;
 import com.example.miniproject.dto.JwtDto;
 import com.example.miniproject.dto.LoginDTO;
-import com.example.miniproject.user.User;
+import com.example.miniproject.model.user.User;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

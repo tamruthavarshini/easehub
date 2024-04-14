@@ -1,4 +1,4 @@
-package com.example.miniproject.user;
+package com.example.miniproject.model.user;
 
 public enum Role {
     Professor,

@@ -1,7 +1,6 @@
 package com.example.miniproject.config.auth;
 
-import com.example.miniproject.user.User;
-import com.example.miniproject.user.UserRepository;
+import com.example.miniproject.repository.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

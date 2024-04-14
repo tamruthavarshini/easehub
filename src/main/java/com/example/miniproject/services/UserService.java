@@ -1,6 +1,6 @@
 package com.example.miniproject.services;
 
-import com.example.miniproject.user.UserRepository;
+import com.example.miniproject.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,4 +1,4 @@
-package com.example.miniproject.user;
+package com.example.miniproject.model.user;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
