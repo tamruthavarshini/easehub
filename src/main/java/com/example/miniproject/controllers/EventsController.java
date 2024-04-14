@@ -19,11 +19,13 @@ public class EventsController {
     private EventsService eventsService;
     @Autowired
     EventRepository eventRepository;
+    @CrossOrigin(origins = "*")
     @GetMapping("/event/permission/{year}/{branch}")
     public List<Student> grantpermission(@RequestHeader("Authorization") String token,@PathVariable String branch, @PathVariable int year)
     {
         return eventsService.getListOfStudents(branch, year);
     }
+    @CrossOrigin(origins = "*")
     @PostMapping("event/permissions")
     public ResponseEntity<?> addToEvents(@RequestHeader("Authorization") String token,@RequestBody List<String> ids) {
         if (eventsService.transferStudentToEvents(ids)) {

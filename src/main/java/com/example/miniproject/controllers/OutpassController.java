@@ -29,6 +29,7 @@ public class OutpassController {
     OutpassRepository outpassRepository;
     @Autowired
     StudentRepository studentRepository;
+    @CrossOrigin(origins = "*")
     @PostMapping("/{rollNo}/outpass")
     public ResponseEntity<?> addToArchive(@RequestHeader("Authorization") String token,@PathVariable String rollNo) {
         if (outpassService.transferStudentToOutpass(rollNo)) {
@@ -37,12 +38,12 @@ public class OutpassController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized");
         }
     }
-
+    @CrossOrigin(origins = "*")
     @GetMapping("/outpass/all")
     public List<Outpass> getAllPosts(@RequestHeader("Authorization") String token) {
         return outpassRepository.findAll();
     }
-
+    @CrossOrigin(origins = "*")
     @GetMapping("/outpass/{rollNo}")
     public ResponseEntity<?> search(@RequestHeader("Authorization") String token,@PathVariable String rollNo) {
         if (outpassService.doesStudentExistByRollNo(rollNo)) {
