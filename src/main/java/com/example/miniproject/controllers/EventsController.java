@@ -1,5 +1,6 @@
 package com.example.miniproject.controllers;
 
+import com.example.miniproject.model.student.Events;
 import com.example.miniproject.model.student.Student;
 import com.example.miniproject.repository.EventRepository;
 import com.example.miniproject.services.EventsService;
@@ -34,6 +35,13 @@ public class EventsController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized");
         }
     }
+    @CrossOrigin(origins="*")
+    @GetMapping("event/{year}/{branch}/permission")
+    public List<Events> grantpermissions(@RequestHeader("Authorization") String token, @PathVariable String branch, @PathVariable int year)
+    {
+        return eventsService.getListOfPermittedStudents(branch, year);
+    }
+
 
 
 }

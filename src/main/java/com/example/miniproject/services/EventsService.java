@@ -49,6 +49,23 @@ public class EventsService {
         return students;
     }
 
+    public List<Events> getListOfPermittedStudents(String branch, int year){
+        final List<Events> events = new ArrayList<>();
+        MongoDatabase database = client.getDatabase("EaseHub");
+        MongoCollection<Document> collection = database.getCollection("Events");
+        AggregateIterable<Document> result = collection.aggregate(Arrays.asList(new Document("$search",
+                        new Document("index", "event")
+                                .append("equals",
+                                        new Document("path", "year")
+                                                .append("value", 3L))),
+                new Document("$match",
+                        new Document("branch", "CSE")),
+                new Document("$sort",
+                        new Document("rollNo", 1L))));
+        result.forEach(doc -> events.add(converter.read(Events.class,doc)));
+        return events;
+    }
+
     public boolean transferStudentToEvents(List<String> ids) {
         for(int i=0;i<ids.size();i++)
         {
