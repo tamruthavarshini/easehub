@@ -13,6 +13,15 @@ public class Events {
     private String phone;
     private LocalDateTime createdAt;
     private LocalDateTime expiresAt;
+    private String reason;
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
 
     public LocalDateTime getExpiresAt() {
         return expiresAt;
@@ -49,6 +58,7 @@ public class Events {
                 ", phone='" + phone + '\'' +
                 ", createdAt=" + createdAt +
                 ", expiresAt=" + expiresAt +
+                ", event='" + reason + '\'' +
                 '}';
     }
 

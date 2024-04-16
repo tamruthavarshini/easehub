@@ -15,17 +15,29 @@ public class User implements UserDetails {
     private Role role;
     private String name;
     private String branch;
+    private String photo;
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+
 
     public User(String username) {
         this.username = username;
     }
 
-    public User(String username, String password, Role role, String name, String branch) {
+    public User(String username, String password, Role role, String name, String branch, String photo) {
         this.username = username;
         this.password = password;
         this.role = role;
         this.name = name;
         this.branch = branch;
+        this.photo = photo;
     }
 
     public String getName() {
@@ -43,11 +55,7 @@ public class User implements UserDetails {
     public void setBranch(String branch) {
         this.branch = branch;
     }
-//    public User(String username, String password, Role role) {
-//        this.username = username;
-//        this.password = password;
-//        this.role = role;
-//    }
+
 
     public User() {
 

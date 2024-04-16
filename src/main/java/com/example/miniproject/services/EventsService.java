@@ -1,5 +1,6 @@
 package com.example.miniproject.services;
 
+import com.example.miniproject.model.requests.RequestObject;
 import com.example.miniproject.model.student.Events;
 import com.example.miniproject.model.student.Student;
 import com.example.miniproject.repository.EventRepository;
@@ -13,6 +14,7 @@ import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.convert.MongoConverter;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -67,10 +69,10 @@ public class EventsService {
         return events;
     }
 
-    public boolean transferStudentToEvents(List<String> ids) {
-        for(int i=0;i<ids.size();i++)
+    public boolean transferStudentToEvents(RequestObject requestObject) {
+        for(int i=0;i<requestObject.getIds().size();i++)
         {
-            String s=ids.get(i);
+            String s=requestObject.getIds().get(i);
             Student student = studentRepository.findByRollNo(s);
 
             if (!doesStudentExistByRollNo(s)) {
@@ -80,9 +82,10 @@ public class EventsService {
                 event.setYear(student.getYear());
                 event.setBranch(student.getBranch());
                 event.setPhone(student.getPhone());
-                event.setCreatedAt(LocalDateTime.now());
-                LocalDateTime expiryDate = event.getCreatedAt().plusHours(6);
-                event.setExpiresAt(expiryDate);
+                event.setCreatedAt(requestObject.getStart());
+                event.setExpiresAt(requestObject.getEnd());
+                event.setReason(requestObject.getReason());
+
                 eventRepository.save(event);
 
             }

@@ -34,6 +34,7 @@ public class AuthController {
         String role = user.getRole().name();
         String name = user.getName();
         String branch=user.getBranch();
-        return ResponseEntity.ok(new JwtDto(accessToken, role, name,branch));
+        String photo=user.getPhoto();
+        return ResponseEntity.ok(new JwtDto(accessToken, role, name,branch,photo));
     }
 }
