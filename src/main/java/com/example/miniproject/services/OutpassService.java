@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.convert.MongoConverter;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+
 @Service
 public class OutpassService {
     @Autowired
@@ -33,6 +35,10 @@ public class OutpassService {
                 outpass.setName(student.getName());
                 outpass.setYear(student.getYear());
                 outpass.setBranch(student.getBranch());
+                outpass.setPhone(student.getPhone());
+                outpass.setCreatedAt(LocalDateTime.now());
+                LocalDateTime expiryDate = outpass.getCreatedAt().plusHours(6);
+                outpass.setExpiresAt(expiryDate);
                 outpassRepository.save(outpass);
             }
             return true;

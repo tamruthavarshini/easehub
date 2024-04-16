@@ -8,9 +8,14 @@ public class Student {
     private String name;
     private String branch;
     private int year;
+   private String phone;
 
-    public String getRollNo() {
-        return rollNo;
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     @Override
@@ -20,8 +25,14 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", branch='" + branch + '\'' +
                 ", year=" + year +
+                ", phone='" + phone + '\'' +
                 '}';
     }
+
+    public String getRollNo() {
+        return rollNo;
+    }
+
     public Student() {
 
     }
@@ -54,10 +65,5 @@ public class Student {
         this.year = year;
     }
 
-    public Student(String rollNo, String name, String branch, int year) {
-        this.rollNo = rollNo;
-        this.name = name;
-        this.branch = branch;
-        this.year = year;
-    }
+
 }

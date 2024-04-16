@@ -2,20 +2,53 @@ package com.example.miniproject.model.student;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Document(collection = "Events")
 public class Events {
     private  String rollNo;
     private String name;
     private String branch;
     private int year;
+    private String phone;
+    private LocalDateTime createdAt;
+    private LocalDateTime expiresAt;
+
+    public LocalDateTime getExpiresAt() {
+        return expiresAt;
+    }
+
+    public void setExpiresAt(LocalDateTime expiresAt) {
+        this.expiresAt = expiresAt;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     @Override
     public String toString() {
-        return "NewStudent{" +
+        return "Events{" +
                 "rollNo='" + rollNo + '\'' +
                 ", name='" + name + '\'' +
                 ", branch='" + branch + '\'' +
                 ", year=" + year +
+                ", phone='" + phone + '\'' +
+                ", createdAt=" + createdAt +
+                ", expiresAt=" + expiresAt +
                 '}';
     }
 
@@ -51,12 +84,7 @@ public class Events {
         this.year = year;
     }
 
-    public Events(String rollNo, String name, String branch, int year) {
-        this.rollNo = rollNo;
-        this.name = name;
-        this.branch = branch;
-        this.year = year;
-    }
+
     public Events() {
 
     }

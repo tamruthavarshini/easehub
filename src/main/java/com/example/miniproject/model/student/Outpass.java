@@ -2,20 +2,52 @@ package com.example.miniproject.model.student;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Document(collection = "Outpass")
 public class Outpass {
     private  String rollNo;
     private String name;
     private String branch;
     private int year;
+    private String phone;
+    private LocalDateTime createdAt;
+    private LocalDateTime expiresAt;
+
+    public LocalDateTime getExpiresAt() {
+        return expiresAt;
+    }
+
+    public void setExpiresAt(LocalDateTime expiresAt) {
+        this.expiresAt = expiresAt;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     @Override
     public String toString() {
-        return "NewStudent{" +
+        return "Outpass{" +
                 "rollNo='" + rollNo + '\'' +
                 ", name='" + name + '\'' +
                 ", branch='" + branch + '\'' +
                 ", year=" + year +
+                ", phone='" + phone + '\'' +
+                ", createdAt=" + createdAt +
+                ", expiresAt=" + expiresAt +
                 '}';
     }
 
@@ -51,12 +83,7 @@ public class Outpass {
         this.year = year;
     }
 
-    public Outpass(String rollNo, String name, String branch, int year) {
-        this.rollNo = rollNo;
-        this.name = name;
-        this.branch = branch;
-        this.year = year;
-    }
+
     public Outpass() {
 
     }

@@ -14,6 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -41,8 +42,17 @@ public class OutpassController {
     @CrossOrigin(origins = "*")
     @GetMapping("/outpass/all")
     public List<Outpass> getAllPosts(@RequestHeader("Authorization") String token) {
-        return outpassRepository.findAll();
+        LocalDateTime currentTime = LocalDateTime.now();
+
+        // Retrieve students with expiryDate greater than or equal to the current time
+        List<Outpass> validStudents = outpassRepository.findByExpiresAtGreaterThanEqual(currentTime);
+        return validStudents;
     }
+
+//
+//        return outpassRepository.findAll();
+
+
     @CrossOrigin(origins = "*")
     @GetMapping("/outpass/{rollNo}")
     public ResponseEntity<?> search(@RequestHeader("Authorization") String token,@PathVariable String rollNo) {
@@ -52,7 +62,8 @@ public class OutpassController {
             String rollno = student.getRollNo();
             String branch=student.getBranch();
             int year=student.getYear();
-            return ResponseEntity.ok(new StudentDto(name, rollno,branch,year));
+            String phone=student.getPhone();
+            return ResponseEntity.ok(new StudentDto(name, rollno,branch,year,phone));
         } else {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized");
         }

@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.convert.MongoConverter;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -78,7 +79,10 @@ public class EventsService {
                 event.setName(student.getName());
                 event.setYear(student.getYear());
                 event.setBranch(student.getBranch());
-
+                event.setPhone(student.getPhone());
+                event.setCreatedAt(LocalDateTime.now());
+                LocalDateTime expiryDate = event.getCreatedAt().plusHours(6);
+                event.setExpiresAt(expiryDate);
                 eventRepository.save(event);
 
             }
