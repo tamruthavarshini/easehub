@@ -11,9 +11,12 @@ public class Events {
     private String branch;
     private int year;
     private String phone;
-    private LocalDateTime createdAt;
-    private LocalDateTime expiresAt;
+    private LocalDateTime start;
+    private LocalDateTime end;
+
     private String reason;
+
+
 
     public String getReason() {
         return reason;
@@ -23,22 +26,22 @@ public class Events {
         this.reason = reason;
     }
 
-    public LocalDateTime getExpiresAt() {
-        return expiresAt;
+
+    public LocalDateTime getStart() {
+        return start;
     }
 
-    public void setExpiresAt(LocalDateTime expiresAt) {
-        this.expiresAt = expiresAt;
+    public void setStart(LocalDateTime start) {
+        this.start = start;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
+    public LocalDateTime getEnd() {
+        return end;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
+    public void setEnd(LocalDateTime end) {
+        this.end = end;
     }
-
 
     public String getPhone() {
         return phone;
@@ -48,19 +51,7 @@ public class Events {
         this.phone = phone;
     }
 
-    @Override
-    public String toString() {
-        return "Events{" +
-                "rollNo='" + rollNo + '\'' +
-                ", name='" + name + '\'' +
-                ", branch='" + branch + '\'' +
-                ", year=" + year +
-                ", phone='" + phone + '\'' +
-                ", createdAt=" + createdAt +
-                ", expiresAt=" + expiresAt +
-                ", event='" + reason + '\'' +
-                '}';
-    }
+
 
     public String getRollNo() {
         return rollNo;
@@ -76,6 +67,20 @@ public class Events {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Events{" +
+                "rollNo='" + rollNo + '\'' +
+                ", name='" + name + '\'' +
+                ", branch='" + branch + '\'' +
+                ", year=" + year +
+                ", phone='" + phone + '\'' +
+                ", start=" + start +
+                ", end=" + end +
+                ", reason='" + reason + '\'' +
+                '}';
     }
 
     public String getBranch() {

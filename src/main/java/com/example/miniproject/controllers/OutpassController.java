@@ -30,6 +30,7 @@ public class OutpassController {
     OutpassRepository outpassRepository;
     @Autowired
     StudentRepository studentRepository;
+
     @CrossOrigin(origins = "*")
     @PostMapping("/{rollNo}/outpass")
     public ResponseEntity<?> addToArchive(@RequestHeader("Authorization") String token,@PathVariable String rollNo) {
@@ -58,6 +59,14 @@ public class OutpassController {
     public ResponseEntity<?> search(@RequestHeader("Authorization") String token,@PathVariable String rollNo) {
         if (outpassService.doesStudentExistByRollNo(rollNo)) {
             Outpass student = outpassRepository.findByRollNo(rollNo);
+
+            // Check if the student's outpass has expired
+            LocalDateTime currentTime = LocalDateTime.now();
+            if (student.getExpiresAt().isBefore(currentTime)) {
+                // If the outpass has expired, return 403 Forbidden
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Outpass has expired");
+            }
+
             String name = student.getName();
             String rollno = student.getRollNo();
             String branch=student.getBranch();

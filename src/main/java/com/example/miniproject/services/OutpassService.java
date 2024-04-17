@@ -19,9 +19,9 @@ public class OutpassService {
     MongoConverter converter;
     @Autowired
     private StudentRepository studentRepository;
-
     @Autowired
     private OutpassRepository outpassRepository;
+
     public boolean doesStudentExistByRollNo(String rollNo) {
         return outpassRepository.existsByRollNo(rollNo);
     }

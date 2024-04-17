@@ -2,6 +2,7 @@ package com.example.miniproject.services;
 
 import com.example.miniproject.model.requests.RequestObject;
 import com.example.miniproject.model.student.Events;
+import com.example.miniproject.model.student.Outpass;
 import com.example.miniproject.model.student.Student;
 import com.example.miniproject.repository.EventRepository;
 import com.example.miniproject.repository.OutpassRepository;
@@ -13,12 +14,16 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.convert.MongoConverter;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -60,13 +65,27 @@ public class EventsService {
                         new Document("index", "event")
                                 .append("equals",
                                         new Document("path", "year")
-                                                .append("value", 3L))),
+                                                .append("value", year))),
                 new Document("$match",
-                        new Document("branch", "CSE")),
+                        new Document("branch", branch)),
                 new Document("$sort",
                         new Document("rollNo", 1L))));
         result.forEach(doc -> events.add(converter.read(Events.class,doc)));
-        return events;
+        final List<Events> eve = getListOfActivePermittedStudents(events);
+        return eve;
+    }
+    public List<Events> getListOfActivePermittedStudents(List<Events> events)
+    {
+        final List<Events> eve = new ArrayList<>();
+        for(int i=0;i<events.size();i++)
+        {
+            Events e=events.get(i);
+            LocalDateTime currentTime = LocalDateTime.now();
+            if (!e.getEnd().isBefore(currentTime)) {
+                eve.add(e);
+            }
+        }
+        return eve;
     }
 
     public boolean transferStudentToEvents(RequestObject requestObject) {
@@ -82,8 +101,8 @@ public class EventsService {
                 event.setYear(student.getYear());
                 event.setBranch(student.getBranch());
                 event.setPhone(student.getPhone());
-                event.setCreatedAt(requestObject.getStart());
-                event.setExpiresAt(requestObject.getEnd());
+                event.setStart(requestObject.getStart());
+                event.setEnd(requestObject.getEnd());
                 event.setReason(requestObject.getReason());
 
                 eventRepository.save(event);
