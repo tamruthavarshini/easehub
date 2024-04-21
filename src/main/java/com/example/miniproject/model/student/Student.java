@@ -9,13 +9,10 @@ public class Student {
     private String branch;
     private int year;
    private String phone;
+   private String mentorId;
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public String getMentorId() {
+        return mentorId;
     }
 
     @Override
@@ -26,8 +23,32 @@ public class Student {
                 ", branch='" + branch + '\'' +
                 ", year=" + year +
                 ", phone='" + phone + '\'' +
+                ", mentorId='" + mentorId + '\'' +
                 '}';
     }
+
+    public void setMentorId(String mentorId) {
+        this.mentorId = mentorId;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public Student(String rollNo, String name, String branch, int year, String phone, String mentorId) {
+        this.rollNo = rollNo;
+        this.name = name;
+        this.branch = branch;
+        this.year = year;
+        this.phone = phone;
+        this.mentorId = mentorId;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+
 
     public String getRollNo() {
         return rollNo;

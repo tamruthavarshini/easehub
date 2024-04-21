@@ -2,10 +2,8 @@ package com.example.miniproject.services;
 
 import com.example.miniproject.model.requests.RequestObject;
 import com.example.miniproject.model.student.Events;
-import com.example.miniproject.model.student.Outpass;
 import com.example.miniproject.model.student.Student;
 import com.example.miniproject.repository.EventRepository;
-import com.example.miniproject.repository.OutpassRepository;
 import com.example.miniproject.repository.StudentRepository;
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoClient;
@@ -14,16 +12,11 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.convert.MongoConverter;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 
 @Service
