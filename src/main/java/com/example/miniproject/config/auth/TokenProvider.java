@@ -5,6 +5,8 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.example.miniproject.model.user.User;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
@@ -16,11 +18,12 @@ public class TokenProvider {
     private String JWT_SECRET = "bharath_is_a_good_boy";
 
     public String generateAccessToken(User user) {
+        String role = user.getRole().name();
         try {
             Algorithm algorithm = Algorithm.HMAC256(JWT_SECRET);
             return JWT.create()
                     .withSubject(user.getUsername())
-                    .withClaim("username", user.getUsername())
+                    .withClaim("role", role)
                     .withExpiresAt(genAccessExpirationDate())
                     .sign(algorithm);
         } catch (JWTCreationException exception) {
@@ -43,5 +46,11 @@ public class TokenProvider {
     private Instant genAccessExpirationDate() {
         return LocalDateTime.now().plusHours(2).toInstant(ZoneOffset.of("-03:00"));
 
+    }
+    public Claims decodeJWT(String jwtToken) {
+        return Jwts.parser()
+                .setSigningKey(JWT_SECRET)
+                .parseClaimsJws(jwtToken)
+                .getBody();
     }
 }
