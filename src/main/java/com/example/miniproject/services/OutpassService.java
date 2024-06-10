@@ -40,7 +40,7 @@ public class OutpassService {
         System.out.println(student.getMentorId());
 
         if (student != null) {
-            if((role!="HOD"&&student.getMentorId().equals(sub))||(role=="HOD")) {
+            if(role.equals("HOD") || student.getMentorId().equals(sub)) {
                 if (!doesStudentExistByRollNo(rollNo)) {
                     Outpass outpass = new Outpass();
                     outpass.setRollNo(student.getRollNo());
