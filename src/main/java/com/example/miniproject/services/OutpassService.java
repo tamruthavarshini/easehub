@@ -17,6 +17,8 @@ import org.springframework.stereotype.Service;
 
 import java.io.UnsupportedEncodingException;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class OutpassService {
@@ -63,6 +65,21 @@ public class OutpassService {
         else {
             return false;
         }
+
+    }
+    public List<String> getSubAndRole(String token) throws UnsupportedEncodingException, JsonProcessingException {
+        String payload = token.split("\\.")[1];
+        String decodedPayload = new String(Base64.decodeBase64(payload), "UTF-8");
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        JsonNode payloadNode = objectMapper.readTree(decodedPayload);
+
+        String subject = payloadNode.get("sub").asText();
+        String role = payloadNode.get("role").asText();
+        List<String> list=new ArrayList<>(2);
+        list.add(subject);
+        list.add(role);
+        return list;
 
     }
 

@@ -42,14 +42,9 @@ public class OutpassController {
     @CrossOrigin(origins = "*")
     @PostMapping("/{rollNo}/outpass")
     public ResponseEntity<?> addToArchive(@RequestHeader("Authorization") String token,@PathVariable String rollNo) throws UnsupportedEncodingException, JsonProcessingException {
-        String payload = token.split("\\.")[1];
-        String decodedPayload = new String(Base64.decodeBase64(payload), "UTF-8");
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        JsonNode payloadNode = objectMapper.readTree(decodedPayload);
-
-        String subject = payloadNode.get("sub").asText();
-        String role = payloadNode.get("role").asText();
+        List<String> list=outpassService.getSubAndRole(token);
+        String subject=list.get(0);
+        String role=list.get(1);
 
         if (outpassService.transferStudentToOutpass(rollNo,subject,role)) {
             return ResponseEntity.ok().build();
