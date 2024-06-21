@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface OutpassRepository extends MongoRepository<Outpass,String> {
     boolean existsByRollNo(String rollNo);
+    boolean existsByRollNoAndExpiresAtAfter(String rollNo, LocalDateTime now);
     Outpass findByRollNo(String rollNo);
     List<Outpass> findByExpiresAtGreaterThanEqual(LocalDateTime currentTime);
     List<Outpass> findByCreatedAtGreaterThanEqual(LocalDateTime currentTime);

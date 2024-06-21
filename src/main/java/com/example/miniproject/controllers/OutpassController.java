@@ -70,7 +70,7 @@ public class OutpassController {
     @CrossOrigin(origins = "*")
     @GetMapping("/outpass/{rollNo}")
     public ResponseEntity<?> search(@RequestHeader("Authorization") String token,@PathVariable String rollNo) {
-        if (outpassService.doesStudentExistByRollNo(rollNo)) {
+        if (outpassService.doesStudentExistByRollNoAndNotExpired(rollNo)) {
             Outpass student = outpassRepository.findByRollNo(rollNo);
 
             // Check if the student's outpass has expired

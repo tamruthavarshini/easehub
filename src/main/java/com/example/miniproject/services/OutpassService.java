@@ -34,16 +34,17 @@ public class OutpassService {
     @Autowired
     private OutpassRepository outpassRepository;
 
-    public boolean doesStudentExistByRollNo(String rollNo) {
-        return outpassRepository.existsByRollNo(rollNo);
+    public boolean doesStudentExistByRollNoAndNotExpired(String rollNo) {
+        return outpassRepository.existsByRollNoAndExpiresAtAfter(rollNo, LocalDateTime.now());
     }
+
     public boolean transferStudentToOutpass(String rollNo,String sub,String role) {
         Student student = studentRepository.findByRollNo(rollNo);
         System.out.println(student.getMentorId());
 
         if (student != null) {
             if(role.equals("HOD") || student.getMentorId().equals(sub)) {
-                if (!doesStudentExistByRollNo(rollNo)) {
+                if (!doesStudentExistByRollNoAndNotExpired(rollNo)) {
                     Outpass outpass = new Outpass();
                     outpass.setRollNo(student.getRollNo());
                     outpass.setName(student.getName());

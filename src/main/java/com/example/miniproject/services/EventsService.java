@@ -73,7 +73,7 @@ public class EventsService {
         for(int i=0;i<events.size();i++)
         {
             Events e=events.get(i);
-            LocalDateTime currentTime = LocalDateTime.now();
+            LocalDateTime currentTime = LocalDateTime.now().plusDays(1);
             if (!e.getEnd().isBefore(currentTime)) {
                 eve.add(e);
             }
