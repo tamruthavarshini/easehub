@@ -1,0 +1,75 @@
+[
+  {
+    "rollNo": "21241A05X7",
+    "year":3,
+    "name": "T.Amrutha Varshini",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05T0"
+  },
+  {
+    "rollNo": "21241A05V6",
+    "year":3,
+    "name": "M.Sreevani",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05T0"
+  },
+  {
+    "rollNo": "21241A05Y0",
+    "year": 3,
+    "name": "T.Niharika",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05T0"
+  },
+  {
+    "rollNo": "21241A05S4",
+    "year":3,
+    "name": "Manasa",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05T0"
+  },
+  {
+    "rollNo": "21241A05S6",
+    "year":3,
+    "name": "Harika",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05T0"
+  },
+  {
+    "rollNo": "21241A05T0",
+    "year":3,
+    "name": "Shruthika",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05X1"
+  },
+  {
+    "rollNo": "21241A05U8",
+    "year":4,
+    "name": "Parthipa",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05X1"
+  },
+  {
+    "rollNo": "21241A05U4",
+    "year": 3,
+    "name": "Pravalika",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05X1"
+  },
+  {
+    "rollNo": "21241A05X1",
+    "year":3,
+    "name": "Anjali",
+    "branch": "CSE",
+    "phone": "7981054363",
+    "mentorId": "21241A05X1"
+  }
+
+]

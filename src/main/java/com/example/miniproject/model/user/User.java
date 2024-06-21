@@ -16,6 +16,24 @@ public class User implements UserDetails {
     private String name;
     private String branch;
     private String photo;
+    private String mailId;
+    private String phone;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getMailId() {
+        return mailId;
+    }
+
+    public void setMailId(String mailId) {
+        this.mailId = mailId;
+    }
 
     public String getPhoto() {
         return photo;
@@ -31,13 +49,16 @@ public class User implements UserDetails {
         this.username = username;
     }
 
-    public User(String username, String password, Role role, String name, String branch, String photo) {
+
+    public User(String username, String password, Role role, String name, String branch, String photo, String mailId, String phone) {
         this.username = username;
         this.password = password;
         this.role = role;
         this.name = name;
         this.branch = branch;
         this.photo = photo;
+        this.mailId = mailId;
+        this.phone = phone;
     }
 
     public String getName() {

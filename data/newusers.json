@@ -1,0 +1,32 @@
+[
+  {
+    "name":"Dr.B.Sankara Babu",
+    "role":"HOD",
+    "username":"441",
+    "phone":"9849464227",
+    "password": "$2a$10$uZGJoyrKqWP/3uyfYdUd1uI3rQA.jVrqdlkccMqtudRL5fVOg7VoC",
+    "branch":"CSE",
+    "mailId":"hod_cse@griet.ac.in",
+    "id": 100
+  },{
+
+  "username": "21241A05X7",
+  "password": "$2a$10$OUg1cv6hS1B0tQISopGCF.3ve.WzBVLlMqqvdjBG83YAkhpOnUxym",
+  "role": "Student",
+  "id":101,
+  "name": "T.Amrutha Varshini",
+  "branch": "CSE",
+  "photo": "https://firebasestorage.googleapis.com/v0/b/easehub-7a3f1.appspot.com/o/amrutha.png?alt=media&token=2f703cbd-66b0-41a3-bc92-127d0eac9372"
+
+},
+  {
+    "username": "21241A05Z0",
+    "password": "$2a$10$85lp19aJFWcSmDjnLdWf/egbkOHqur6AaBZi4vNOBm2FyyHU3YJx2",
+    "role": "Security",
+    "id":129,
+    "name": "ishaan",
+    "branch": "CSE",
+    "photo": "https://firebasestorage.googleapis.com/v0/b/easehub-7a3f1.appspot.com/o/security.png?alt=media&token=63e5ff18-ea5b-476d-8581-c7c9f0aa4655"
+
+  }
+]

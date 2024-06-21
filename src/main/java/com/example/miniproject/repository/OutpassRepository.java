@@ -11,4 +11,5 @@ public interface OutpassRepository extends MongoRepository<Outpass,String> {
     Outpass findByRollNo(String rollNo);
     List<Outpass> findByExpiresAtGreaterThanEqual(LocalDateTime currentTime);
     List<Outpass> findByCreatedAtGreaterThanEqual(LocalDateTime currentTime);
+    List<Outpass> findByCreatedAtBetween(LocalDateTime startOfDay, LocalDateTime endOfDay);
 }

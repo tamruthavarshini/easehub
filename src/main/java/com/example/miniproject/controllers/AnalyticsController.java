@@ -9,8 +9,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static org.apache.commons.lang3.time.DateUtils.parseDate;
 
@@ -53,6 +57,16 @@ public class AnalyticsController {
         list.add(x2.size()-x1.size());
         return list;
     }
+    @CrossOrigin(origins = "*")
+    @GetMapping("/data")
+    public List<String> dataOfOutpass(@RequestHeader("Authorization") String token,@RequestParam("date") @DateTimeFormat(pattern = "yyyy-MM-dd") String dateString)
+    {
+        LocalDate date = LocalDate.parse(dateString, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        return analyticsService.getRollNosByDate(date);
+
+    }
+
+
 
 
 

@@ -1,4 +1,5 @@
 [
+
   {
 
     "username": "21241A05X7",
@@ -32,7 +33,7 @@
   {
 
     "username": "21241A05S4",
-    "password": "$2a$10$5LGNkGWurmFcWEpfpO4mPO4xxAPRQ3Wcq3BQC0j7/4Y4b8wmRayD2",
+    "password": "$2a$10$5LGNkGWurmFcWEpfpO4mPO4xxAPRQ3Wcq3BQC0j7/4Y4b8wmRayD2",//10052004
     "role": "Professor",
     "id":104,
     "name": "manasa",
@@ -42,7 +43,7 @@
   {
 
     "username": "21241A05S6",
-    "password": "$2a$10$Lj8aJWZgdLXELkP7r8B29ucJyD6vgumnDSv9Wfuw.XKhdQY45grAu",
+    "password": "$2a$10$Lj8aJWZgdLXELkP7r8B29ucJyD6vgumnDSv9Wfuw.XKhdQY45grAu",//11052004
     "role": "Professor",
     "id":105,
     "name": "harika",
@@ -62,7 +63,7 @@
   {
 
     "username": "21241A05U8",
-    "password": "$2a$10$wamyM6E4rrL31Qw6c.JVAuZ9LdA9Uo/kifnxgUbY9mFiNXgHL3URC",
+    "password": "$2a$10$wamyM6E4rrL31Qw6c.JVAuZ9LdA9Uo/kifnxgUbY9mFiNXgHL3URC",//13052004
     "role": "Professor",
     "id":107,
     "name": "parthipa",
@@ -82,7 +83,7 @@
   {
 
     "username": "21241A05Y0",
-    "password": "$2a$10$El80q8XNRucwvyClqXqFS.3eR16eVCfcflicwhSErZOj0B9TEnuL6",
+    "password": "$2a$10$El80q8XNRucwvyClqXqFS.3eR16eVCfcflicwhSErZOj0B9TEnuL6",//15052004
     "role": "AssistantProfessor",
     "id":109,
     "name": "niharika",
